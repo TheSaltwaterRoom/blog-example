@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/post', 'PostController@post');
+Route::get('/post/json', 'PostController@postJson');
